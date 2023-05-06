@@ -1,31 +1,15 @@
-# Mock.js
-<!-- 模拟请求 & 模拟数据 -->
-[![Build Status](https://travis-ci.org/nuysoft/Mock.svg?branch=refactoring)](https://travis-ci.org/nuysoft/Mock)
+## 仓库说明
 
-<!-- [![Coverage Status](https://coveralls.io/repos/nuysoft/Mock/badge.png?branch=refactoring)](https://coveralls.io/r/nuysoft/Mock?branch=refactoring)
-[![NPM version](https://badge.fury.io/js/mockjs.svg)](http://badge.fury.io/js/mockjs)
-[![Bower version](https://badge.fury.io/bo/mockjs.svg)](http://badge.fury.io/bo/mockjs)
-[![Dependency Status](https://gemnasium.com/nuysoft/Mock.svg)](https://gemnasium.com/nuysoft/Mock)
-[![spm package](http://spmjs.io/badge/mockjs)](http://spmjs.io/package/mockjs) -->
+-   此仓库为补丁包，解决作者不维护的但存在 bug 的问题。
+-   用法请参考原仓库：https://github.com/nuysoft/Mock/issues/413
 
-Mock.js is a simulation data generator to help the front-end to develop and prototype separate from the back-end progress and reduce some monotony particularly while writing automated tests.
 
-The official site: <http://mockjs.com>
+## 维护说明
 
-## Features
+由于仓库缺少锁定版本的文件（yarn.lock 或者 package-lock.json），多次尝试无法正常打包，暂时只能直接修改dist代码
 
-* Generate simulated data according to the data template
-* Provide request/response mocking for ajax requests
-* ~~Generate simulated data according to HTML-based templates~~
+## V1.1.1
 
-This library is loosely inspired by Elijah Manor's post [Mocking
-Introduction](http://www.elijahmanor.com/2013/04/angry-birds-of-javascript-green-bird.html), [mennovanslooten/mockJSON](https://github.com/mennovanslooten/mockJSON), [appendto/jquery-mockjax](https://github.com/appendto/jquery-mockjax) and [victorquinn/chancejs](https://github.com/victorquinn/chancejs/).
+### Bug Fixes
 
-## Questions?
-If you have any questions, please feel free to ask through [New Issue](https://github.com/nuysoft/Mock/issues/new).
-
-## Reporting an Issue
-Make sure the problem you're addressing is reproducible. Use <http://jsbin.com/> or <http://jsfiddle.net/> to provide a test page. Indicate what browsers the issue can be reproduced in. What version of Mock.js is the issue reproducible in. Is it reproducible after updating to the latest version?
-
-## License
-Mock.js is available under the terms of the [MIT License](./LICENSE).
+-   修复 某个传递二进制流的 post 请求，在没有配置拦截的情况下，Mock 会将后端返回的 arraybuffer 转换成字符串，导致二进制被破坏 [#413](https://github.com/nuysoft/Mock/issues/413)

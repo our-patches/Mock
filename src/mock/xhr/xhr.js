@@ -264,6 +264,7 @@ Util.extend(MockXMLHttpRequest.prototype, {
 
         // 原生 XHR
         if (!this.match) {
+            this.custom.xhr.responseType = this.responseType //复制原始XHR的responseType
             this.custom.xhr.send(data)
             return
         }
