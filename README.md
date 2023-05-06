@@ -1,7 +1,7 @@
 ## 仓库说明
 
 -   此仓库为补丁包，解决作者不维护的但存在 bug 的问题。
--   用法请参考原仓库：https://github.com/nuysoft/Mock/issues/413
+-   用法请参考原仓库：https://github.com/nuysoft/Mock
 
 
 ## 维护说明
