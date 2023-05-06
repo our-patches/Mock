@@ -10,11 +10,11 @@
 
 ## 安装
 ```
-yarn add @our-patches/mockjs
+yarn add @our-patches/mockjs -D
 ```
 or
 ```
-npm install @our-patches/mockjs
+npm install @our-patches/mockjs -D
 ```
 
 
