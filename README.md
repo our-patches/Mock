@@ -8,6 +8,17 @@
 
 由于仓库缺少锁定版本的文件（yarn.lock 或者 package-lock.json），多次尝试无法正常打包，暂时只能直接修改dist代码
 
+## 安装
+```
+yarn add @our-patches/mockjs
+```
+or
+```
+npm install @our-patches/mockjs
+```
+
+
+
 ## V1.1.1
 
 ### Bug Fixes
